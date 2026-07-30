@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.env
+uploads/posts/*
+uploads/avatars/*
+uploads/stories/*
+!uploads/posts/.gitkeep
+!uploads/avatars/.gitkeep
+!uploads/stories/.gitkeep

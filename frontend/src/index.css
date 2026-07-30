@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+:root {
+  --theme-ig-blue: #0095f6;
+  --theme-ig-blue-hover: #1877f2;
+  --theme-ig-black: #262626;
+  --theme-ig-gray: #8e8e8e;
+  --theme-ig-border: #dbdbdb;
+  --theme-ig-bg: #fafafa;
+  --theme-ig-red: #ed4956;
+  --theme-ig-card: #ffffff;
+}
+
+.dark {
+  --theme-ig-blue: #0095f6;
+  --theme-ig-blue-hover: #1877f2;
+  --theme-ig-black: #f5f5f5;
+  --theme-ig-gray: #a8a8a8;
+  --theme-ig-border: #262626;
+  --theme-ig-bg: #000000;
+  --theme-ig-red: #ed4956;
+  --theme-ig-card: #000000;
+}
+
+@theme {
+  --color-ig-blue: var(--theme-ig-blue);
+  --color-ig-blue-hover: var(--theme-ig-blue-hover);
+  --color-ig-black: var(--theme-ig-black);
+  --color-ig-gray: var(--theme-ig-gray);
+  --color-ig-border: var(--theme-ig-border);
+  --color-ig-bg: var(--theme-ig-bg);
+  --color-ig-red: var(--theme-ig-red);
+  --color-ig-card: var(--theme-ig-card);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--color-ig-bg);
+  color: var(--color-ig-black);
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #c7c7c7;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Instagram card */
+.ig-card {
+  background: var(--color-ig-card);
+  border: 1px solid var(--color-ig-border);
+  border-radius: 8px;
+}
+
+/* Story ring gradient — Instagram's iconic orange-pink-purple */
+.story-ring-gradient {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+/* Story ring for viewed stories */
+.story-ring-viewed {
+  background: #dbdbdb;
+}

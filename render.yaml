@@ -1,0 +1,26 @@
+services:
+  # Backend Node.js Server
+  - type: web
+    name: instagram-backend
+    env: node
+    buildCommand: cd backend && npm install && npm run build
+    startCommand: cd backend && npm start
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: instagram-db
+          property: connectionString
+      - key: JWT_SECRET
+        generateValue: true
+      - key: PORT
+        value: 5000
+      - key: CLIENT_URL
+        value: "https://your-frontend-url.vercel.app" # O'zingizni Vercel havolangiz bilan almashtiring
+      - key: NODE_ENV
+        value: production
+
+  # PostgreSQL Database
+  - type: psql
+    name: instagram-db
+    databaseName: instagram_clone
+    user: admin
