@@ -29,7 +29,7 @@ export async function testConnection() {
     } catch (e: any) {
       if (e.code === '42P01') {
         console.log("Jadvallar topilmadi. schema.sql fayli orqali yangi jadvallar yaratilmoqda...");
-        const schemaPath = path.join(__dirname, "schema.sql");
+        const schemaPath = path.join(process.cwd(), "src", "db", "schema.sql");
         const schema = fs.readFileSync(schemaPath, "utf8");
         await pool.query(schema);
         console.log("Jadvallar muvaffaqiyatli yaratildi!");
