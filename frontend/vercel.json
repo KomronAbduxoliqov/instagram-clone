@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "https://your-backend-url.onrender.com/api/$1"
+      "destination": "https://instagram-clone-j6m8.onrender.com/api/$1"
     },
     {
       "source": "/(.*)",

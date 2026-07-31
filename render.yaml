@@ -15,7 +15,7 @@ services:
       - key: PORT
         value: 5000
       - key: CLIENT_URL
-        value: "https://your-frontend-url.vercel.app" # O'zingizni Vercel havolangiz bilan almashtiring
+        value: "https://instagram-clone-six-lac.vercel.app" # O'zingizni Vercel havolangiz bilan almashtiring
       - key: NODE_ENV
         value: production
 

@@ -98,8 +98,8 @@ export default function ForgotPasswordPage() {
           </Link>
         </div>
 
-        <div className="bg-ig-card border border-ig-border rounded-sm mt-3 py-3 text-center">
-          <Link to="/login" className="text-sm text-ig-black font-semibold bg-ig-bg border border-ig-border px-32 py-2 rounded-sm w-full block border-transparent border-t-ig-border hover:bg-gray-50 transition-colors">
+        <div className="bg-ig-card border border-ig-border rounded-sm mt-3 text-center">
+          <Link to="/login" className="text-sm text-ig-black font-semibold bg-ig-bg py-3 w-full block hover:bg-gray-50 transition-colors">
             Ortga qaytish
           </Link>
         </div>
