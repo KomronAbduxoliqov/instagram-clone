@@ -1,0 +1,18 @@
+{
+  "services": {
+    "frontend": {
+      "root": "frontend",
+      "framework": "vite"
+    },
+    "backend": {
+      "root": "backend",
+      "framework": null,
+      "build": {
+        "command": "npm run build"
+      },
+      "run": {
+        "command": "npm start"
+      }
+    }
+  }
+}
